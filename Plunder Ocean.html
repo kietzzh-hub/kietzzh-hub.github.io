@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sách Luật: Plunder Ocean </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #e9e5dc; /* Màu giấy da */
+            background-image: url("https://www.transparenttextures.com/patterns/cream-paper.png");
+            color: #2b2522;
+        }
+        h1, h2, h3, h4, .title-font {
+            font-family: 'Playfair Display', serif;
+        }
+        .paper-container {
+            background-color: #f8f5f0;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 15px rgba(0,0,0,0.05) inset;
+        }
+        .accent-red { color: #9b2226; }
+        .bg-accent-red { background-color: #9b2226; }
+        .accent-blue { color: #005f73; }
+        .bg-accent-blue { background-color: #005f73; }
+        .accent-gold { color: #ca6702; }
+        
+        .ornament {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+        .ornament::before, .ornament::after {
+            content: "";
+            height: 1px;
+            background-color: #9b2226;
+            flex-grow: 1;
+            max-width: 150px;
+        }
+        .ornament-icon {
+            margin: 0 1rem;
+            color: #9b2226;
+            font-size: 1.5rem;
+        }
+        .img-mask {
+            mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
+            -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
+        }
+    </style>
+</head>
+<body class="py-8 px-4 md:px-8 bg-gray-900">
+
+    <div class="max-w-6xl mx-auto paper-container relative overflow-hidden">
+        
+        <!-- BÌA SÁCH -->
+        <header class="relative w-full h-[600px] flex items-center justify-center text-center">
+            <!-- Ảnh nền tàu cướp biển -->
+            <img src="c:\Users\ACER\Pictures\Screenshots\510228a2188e6670d2b520acc57ab0ff.jpg" alt="Pirate Ship" class="absolute inset-0 w-full h-full object-cover img-mask opacity-90 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-gray-900/60 to-[#f8f5f0] z-10"></div>
+            
+            <div class="relative z-20 px-6 mt-32">
+                <p class="text-white tracking-[0.4em] uppercase text-sm md:text-base mb-4 font-bold drop-shadow-md">Sách Hướng Dẫn Luật Chơi</p>
+                <h1 class="text-6xl md:text-8xl font-black text-white title-font drop-shadow-lg mb-2 uppercase tracking-wide">Plunder Ocean</h1>
+                <h2 class="text-3xl md:text-4xl accent-gold title-font italic drop-shadow-md">Đại Chiến Thương Cảng</h2>
+                <div class="mt-8 w-24 h-1 bg-accent-red mx-auto"></div>
+            </div>
+        </header>
+
+        <main class="p-8 md:p-16 pt-0 relative z-20">
+            
+            <!-- SECTION 1 & 2: Grid 2 cột -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+                
+                <!-- 1. Mở đầu -->
+                <section>
+                    <div class="flex items-end gap-3 mb-6 border-b-2 border-gray-300 pb-2">
+                        <span class="text-5xl font-black accent-red title-font">1</span>
+                        <h2 class="text-3xl font-bold accent-blue title-font">Mở Đầu Màn Chơi (Setup)</h2>
+                    </div>
+                    <p class="mb-4 text-gray-700 italic">Mỗi người chơi (Player) khi bắt đầu ván game sẽ được nhận các tài nguyên cốt lõi sau:</p>
+                    
+                    <div class="bg-white p-5 rounded border border-gray-200 shadow-sm space-y-4">
+                        <div class="flex gap-4 items-center">
+                            <div class="w-12 h-12 rounded-full bg-yellow-100 flex items-center justify-center text-2xl flex-shrink-0 shadow-inner">💰</div>
+                            <div>
+                                <h4 class="font-bold text-lg uppercase tracking-wide">Tiền vốn: 20 đồng</h4>
+                                <p class="text-sm text-gray-600">Dùng để tham gia đấu giá di chuyển.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-center">
+                            <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-2xl flex-shrink-0 shadow-inner">📜</div>
+                            <div>
+                                <h4 class="font-bold text-lg uppercase tracking-wide">Tài nguyên: 1 Thẻ</h4>
+                                <p class="text-sm text-gray-600">1 Thẻ tài nguyên ngẫu nhiên ban đầu.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-center">
+                            <div class="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center text-2xl flex-shrink-0 shadow-inner">⚓</div>
+                            <div>
+                                <h4 class="font-bold text-lg uppercase tracking-wide">Sinh mệnh: 3 Thuyền viên</h4>
+                                <p class="text-sm text-gray-600">Tương đương với 3 "mạng" (3 HP). Giúp thuyền chịu đựng được tối đa 3 sát thương khi va chạm.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 2. Cơ chế di chuyển -->
+                <section>
+                    <div class="flex items-end gap-3 mb-6 border-b-2 border-gray-300 pb-2">
+                        <span class="text-5xl font-black accent-red title-font">2</span>
+                        <h2 class="text-3xl font-bold accent-blue title-font">Cơ Chế Di Chuyển & Xúc Xắc</h2>
+                    </div>
+                    
+                    <h3 class="font-bold text-xl accent-red mb-2 title-font">2.1. Quy tắc di chuyển cơ bản</h3>
+                    <ul class="list-disc list-inside mb-4 text-gray-700 space-y-1 ml-2">
+                        <li><strong>Đi thẳng:</strong> Tiêu hao 1 điểm xúc xắc cho mỗi ô.</li>
+                        <li><strong>Đi ngang:</strong> Tiêu hao 2 điểm xúc xắc cho mỗi ô.</li>
+                    </ul>
+                    <div class="bg-gray-100 border-l-4 border-accent-red p-3 mb-6 text-sm italic text-gray-700">
+                        <strong>Lưu ý:</strong> Không thể quay lại các điểm/ô đã đi qua trong cùng 1 lượt.
+                    </div>
+
+                    <h3 class="font-bold text-xl accent-red mb-2 title-font">2.2. Đấu giá Xúc xắc (Đấu giá giấu tay)</h3>
+                    <ol class="list-decimal list-inside space-y-2 text-gray-700 text-sm ml-2">
+                        <li><strong>Gieo xúc xắc:</strong> Gieo 3 viên xúc xắc. (Ví dụ: 5, 3 và 1).</li>
+                        <li><strong>Đấu giá kín:</strong> Giấu tiền cược vào lòng bàn tay và cùng lúc mở ra.</li>
+                        <li><strong>Phân định:</strong> Người nắm nhiều tiền nhất thắng, tiền nộp Ngân hàng. Người thua được hoàn tiền.</li>
+                        <li><strong>Hòa giá:</strong> Đấu vòng tiếp theo, giá lượt trước làm giá sàn. Có quyền bỏ cuộc.</li>
+                        <li><strong>Gán xúc xắc:</strong> Người thắng gán từng viên xúc xắc cho các thuyền. Ai mang số cao nhất đi trước.</li>
+                    </ol>
+                </section>
+            </div>
+
+            <!-- SECTION 3: Banner rộng -->
+            <section class="mb-12 bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/3 bg-gray-200 relative min-h-[200px]">
+                        <!-- Ảnh bản đồ / đại dương -->
+                        <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Map" class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-accent-blue/80 mix-blend-multiply"></div>
+                        <div class="absolute inset-0 flex items-center justify-center p-6 text-center">
+                            <h2 class="text-4xl font-bold text-white title-font drop-shadow-md">3. Tiến Trình Vòng Chơi</h2>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 p-8 flex flex-col md:flex-row gap-8">
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold accent-red mb-3 title-font border-b border-gray-200 pb-2">Lượt Đi (0 ➔ 13)</h3>
+                            <p class="text-sm text-gray-600 mb-3">Xuất phát từ 0 hướng tới Chợ (13). Tại Chợ, bạn được: <strong>Bán tối đa 1 Thẻ</strong> & <strong>Sửa tàu</strong>.</p>
+                            <div class="bg-orange-50 p-3 rounded border border-orange-100">
+                                <h4 class="font-bold text-xs uppercase text-orange-800 mb-2">Thưởng đến Chợ trước</h4>
+                                <ul class="text-sm space-y-1">
+                                    <li>🥇 Về 1: Nhận 3 Thẻ</li>
+                                    <li>🥈 Về 2: Nhận 2 Thẻ</li>
+                                    <li>🥉 Về 3: Nhận 1 Thẻ</li>
+                                </ul>
+                                <p class="text-xs text-gray-500 mt-2 italic">*Cùng đích 3 người: mỗi người 1 thẻ. Cùng đích 2 người: mỗi người 2 thẻ, kẻ cuối 1 thẻ.</p>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold accent-blue mb-3 title-font border-b border-gray-200 pb-2">Lượt Về (13 ➔ 0)</h3>
+                            <p class="text-sm text-gray-600 mb-3">Sau khi giao dịch xong, quay ngược về mốc 0. Khi về đến 0, bạn được:</p>
+                            <ul class="text-sm font-semibold space-y-2">
+                                <li class="flex gap-2"><span>✔</span> Bán Thẻ tài nguyên TÙY Ý (Không giới hạn).</li>
+                                <li class="flex gap-2"><span>✔</span> Sửa tàu.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="ornament"><span class="ornament-icon">⚔️</span></div>
+
+            <!-- SECTION 4: Tương tác -->
+            <section class="mb-12">
+                <div class="flex items-end gap-3 mb-8 text-center justify-center">
+                    <span class="text-5xl font-black accent-red title-font">4</span>
+                    <h2 class="text-3xl font-bold accent-blue title-font border-b-2 border-gray-400 pb-2">Khu Vực & Tương Tác Trên Bản Đồ</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Xưởng -->
+                    <div class="bg-white p-6 rounded shadow-sm border-t-4 border-gray-400">
+                        <h3 class="text-xl font-bold title-font mb-3 flex items-center gap-2">🛠️ Xưởng Sửa Tàu</h3>
+                        <p class="text-sm mb-2 text-gray-700"><strong>Vô chủ:</strong> Trả 2đ/mạng cho Ngân hàng.</p>
+                        <p class="text-sm mb-2 text-gray-700"><strong>Đấu giá:</strong> Kích hoạt khi có người chạm mốc 13 lần 2. Không ai mua thì Ngân hàng siết giá lên 3đ/mạng.</p>
+                        <p class="text-sm text-gray-700 bg-gray-50 p-2 rounded"><strong>Quyền Chủ Xưởng:</strong> Thu 2đ/1 mạng, 4đ/2 mạng từ người khác. Tự sửa miễn phí.</p>
+                    </div>
+
+                    <!-- Va chạm -->
+                    <div class="bg-white p-6 rounded shadow-sm border-t-4 border-red-800">
+                        <h3 class="text-xl font-bold title-font mb-3 flex items-center gap-2 text-red-800">💥 Va Chạm & Sát Thương</h3>
+                        <ul class="text-sm space-y-2 text-gray-700 mb-2">
+                            <li><strong>Đâm Rương:</strong> Nhận 2 sát thương, lấy Kỹ năng.</li>
+                            <li><strong>Đâm Người:</strong> Cả 2 nhận 1 sát thương. Người đâm chiếm chỗ, người bị đâm lùi 1 ô (ngang/dọc). Mất lượt ngay lập tức.</li>
+                        </ul>
+                        <p class="text-sm text-red-700 bg-red-50 p-2 rounded"><strong>Hết 3 mạng:</strong> Trừ 1 Thẻ ra map. Không có thẻ trừ 5 đồng.</p>
+                    </div>
+
+                    <!-- Hải tặc -->
+                    <div class="bg-gray-800 text-gray-200 p-6 rounded shadow-sm border-t-4 border-black">
+                        <h3 class="text-xl font-bold title-font mb-3 flex items-center gap-2 text-white">🏴‍☠️ Tàu Hải Tặc</h3>
+                        <p class="text-sm mb-2"><strong>Điều kiện:</strong> Ngân hàng HẾT Thẻ và bạn đang ở mốc 0 hoặc 13.</p>
+                        <p class="text-sm mb-2"><strong>Chức năng:</strong> Trả 5 đồng để bắn đại bác vào 1 người bất kỳ.</p>
+                        <p class="text-sm text-red-300 font-bold bg-black/30 p-2 rounded">Sát thương: Nạn nhân bị trừ THẲNG 10 đồng trong tay.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 5 & 6 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+                <!-- Kinh tế -->
+                <section>
+                    <div class="flex items-end gap-3 mb-6 border-b-2 border-gray-300 pb-2">
+                        <span class="text-5xl font-black accent-red title-font">5</span>
+                        <h2 class="text-3xl font-bold accent-blue title-font">Kinh Tế & Giao Dịch</h2>
+                    </div>
+                    
+                    <h3 class="font-bold text-lg accent-red mb-2">5.1. Lạm Phát Hàng Hóa</h3>
+                    <p class="text-sm mb-2">Giá bán thẻ tăng dần khi lượng thẻ trong Ngân hàng vơi đi:</p>
+                    <div class="bg-white p-3 rounded shadow-sm font-bold text-center mb-4 tracking-widest text-sm">
+                        5 ➔ 10 ➔ 15 ➔ 20 ➔ <span class="text-xl accent-red">30đ</span>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-6 italic">Nếu 1 mặt hàng cạn kiệt, các mặt hàng khác tăng đột biến: 1 ➔ 2 ➔ 5đ/lá.</p>
+
+                    <h3 class="font-bold text-lg accent-red mb-2">5.2. Kho Lưu Trữ (Mốc 7)</h3>
+                    <ul class="text-sm space-y-2 text-gray-700">
+                        <li><strong>Giới hạn tay:</strong> Tối đa 4 Thẻ.</li>
+                        <li><strong>Gửi/Rút:</strong> Đi qua ô số 7 được gửi thẻ vào, hoặc rút thẻ ra khi đi về.</li>
+                        <li class="bg-red-50 p-2 rounded text-red-800 border-l-2 border-red-800">
+                            <strong>Phạt dồn ứ:</strong> Cuối vòng cầm từ 5 lá (tay + kho), phạt 3đ/lá thừa. Hết tiền phải đốt thẻ.
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Kỹ năng -->
+                <section>
+                    <div class="flex items-end gap-3 mb-6 border-b-2 border-gray-300 pb-2">
+                        <span class="text-5xl font-black accent-red title-font">6</span>
+                        <h2 class="text-3xl font-bold accent-blue title-font">Hệ Thống Kỹ Năng</h2>
+                    </div>
+                    
+                    <p class="text-sm mb-4">Thu thập rương trên map. Chỉ sở hữu 1 kỹ năng 1 lúc.</p>
+                    
+                    <div class="space-y-3">
+                        <div class="flex gap-3 bg-white p-3 rounded shadow-sm border border-gray-200 items-center">
+                            <div class="w-8 h-8 rounded bg-gray-900 flex-shrink-0"></div>
+                            <div>
+                                <h4 class="font-bold text-sm">Điểm Đen (Kiến tạo)</h4>
+                                <p class="text-xs text-gray-600">Đặt 1 vật cản tùy ý. Hết dự trữ thì không thể dùng.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-3 bg-white p-3 rounded shadow-sm border border-gray-200 items-center">
+                            <div class="w-8 h-8 rounded bg-blue-600 flex-shrink-0"></div>
+                            <div>
+                                <h4 class="font-bold text-sm">Điểm Xanh Dương (Thu nhặt)</h4>
+                                <p class="text-xs text-gray-600">Lấy 1 Thẻ từ chồng tài nguyên trôi nổi (đồ rớt của người khác).</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-3 bg-white p-3 rounded shadow-sm border border-gray-200 items-center">
+                            <div class="w-8 h-8 rounded bg-green-500 flex-shrink-0"></div>
+                            <div>
+                                <h4 class="font-bold text-sm">Điểm Xanh Lá (Tráo đổi)</h4>
+                                <p class="text-xs text-gray-600">Cướp 1 Thẻ ngẫu nhiên của địch, trả lại họ 1 thẻ của mình.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-3 bg-white p-3 rounded shadow-sm border border-gray-200 items-center">
+                            <div class="w-8 h-8 rounded bg-yellow-400 flex-shrink-0"></div>
+                            <div>
+                                <h4 class="font-bold text-sm">Điểm Vàng (Tài lộc)</h4>
+                                <p class="text-xs text-gray-600">Gieo 1 xúc xắc, nhận tiền bằng đúng số chấm.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-xs mt-3 text-gray-500 italic">Rương sẽ respawn ngay sau lưng bạn sau khi dùng.</p>
+                </section>
+            </div>
+
+            <!-- SECTION 7 & 8: End game -->
+            <section class="bg-gradient-to-br from-gray-900 to-gray-800 text-white p-8 rounded-xl shadow-2xl relative overflow-hidden">
+                <!-- Background decor -->
+                <div class="absolute -right-10 -bottom-10 text-9xl opacity-10">⚓</div>
+                
+                <div class="relative z-10 grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h2 class="text-3xl font-bold title-font text-yellow-500 mb-4 border-b border-gray-600 pb-2">7. Kết Thúc Trò Chơi</h2>
+                        <p class="mb-2 text-sm">Trò chơi kết thúc khi thỏa mãn 2 điều kiện:</p>
+                        <ul class="list-disc list-inside mb-4 font-bold text-sm text-yellow-100">
+                            <li>Ngân hàng hết sạch Thẻ tài nguyên.</li>
+                            <li>Tất cả đều hết Thẻ trên tay.</li>
+                        </ul>
+                        <div class="bg-yellow-600 text-black font-black text-center p-3 uppercase tracking-widest rounded shadow-lg">
+                            Người nhiều tiền nhất thắng!
+                        </div>
+                        
+                        <div class="mt-6 border border-red-500 bg-red-900/30 p-4 rounded">
+                            <h4 class="font-bold text-red-400 mb-1 flex items-center gap-2">💀 Luật Tử Chiến</h4>
+                            <p class="text-xs text-gray-300">Nếu Ngân hàng hết bài nhưng người chơi găm thẻ không bán, game tiếp tục! Mọi người dùng Hải Tặc bắn nhau. Ai về 0 đồng lập tức BỊ LOẠI.</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="text-3xl font-bold title-font text-blue-400 mb-4 border-b border-gray-600 pb-2">8. Chiến Thuật Cốt Lõi</h2>
+                        <ul class="space-y-4 text-sm text-gray-300">
+                            <li>
+                                <strong class="text-white">Tương tác cao:</strong> Đấu giá giấu tay và hệ thống đẩy lùi tạo sự tranh giành khốc liệt. Mở đường cho mình hoặc dồn địch vào góc chết.
+                            </li>
+                            <li>
+                                <strong class="text-white">Kinh tế tuần hoàn:</strong> Tiền mua di chuyển ➔ Thuyền lấy Thẻ ➔ Thẻ bán ra Tiền. Quản lý dòng vốn không để đứt đoạn.
+                            </li>
+                            <li>
+                                <strong class="text-white">Lạm phát & Đầu cơ:</strong> Cuối game giá thẻ tăng phi mã. Cân não giữa "Bán sớm lấy tiền đấu giá ép đối thủ" và "Găm hàng chờ giá 30đ".
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="text-center py-6 text-gray-500 text-xs tracking-widest uppercase border-t border-gray-300 mt-8 mx-8">
+            Bản quyền luật chơi: Nhóm Nghiên cứu & Phát triển Nhóm 9 D26CQGA03-B
+        </footer>
+    </div>
+</body>
+</html>
